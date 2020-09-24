@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed97fd06c140f439290d75cea9f5ebc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateTarget: {fileID: 0}
+  rotateTarget: {fileID: 2707313177118717711}
   rotateAngle: 0
   SliderObj: {fileID: 7492975832024653531}
 --- !u!114 &90509436934515480
@@ -1133,7 +1133,7 @@ PrefabInstance:
     - target: {fileID: 408383716907633314, guid: 56d4be2743b9841f38c0f7f5d01bc648,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 408383716907633314, guid: 56d4be2743b9841f38c0f7f5d01bc648,
         type: 3}
@@ -1148,7 +1148,7 @@ PrefabInstance:
     - target: {fileID: 408383716907633314, guid: 56d4be2743b9841f38c0f7f5d01bc648,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 408383716907633314, guid: 56d4be2743b9841f38c0f7f5d01bc648,
         type: 3}
@@ -1158,7 +1158,7 @@ PrefabInstance:
     - target: {fileID: 408383716907633314, guid: 56d4be2743b9841f38c0f7f5d01bc648,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 408383716907633314, guid: 56d4be2743b9841f38c0f7f5d01bc648,
         type: 3}
@@ -1272,6 +1272,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b264c88317db140b08163a27402e32a1, type: 3}
+--- !u!1 &2707313177118717711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2458845498314110493, guid: b264c88317db140b08163a27402e32a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 544333063835975954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7674391336927408685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7857996621615018815, guid: b264c88317db140b08163a27402e32a1,
