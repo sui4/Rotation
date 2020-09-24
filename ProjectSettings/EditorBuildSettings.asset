@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/EularAngle.unity
+    guid: 581a3ebfc3fe24980b964a3431b6b845
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 391d521355c63403f9751c88eb99503f,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2c19fdd32b72548249b3e810f66b6a4d,
+      type: 2}
