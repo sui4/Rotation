@@ -168,7 +168,7 @@ LineRenderer:
   - {x: 1, y: 1, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd5860a89f6324bb0b562479b94b1ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  origin: {fileID: 0}
+  origin: {fileID: 2707313177118717711}
   target: {fileID: 90509436934515458}
 --- !u!1 &90509435865683347
 GameObject:
