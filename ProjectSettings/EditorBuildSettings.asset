@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EularAngle.unity
     guid: 581a3ebfc3fe24980b964a3431b6b845
+  - enabled: 0
+    path: Assets/Oculus/SampleFramework/Usage/CustomControllers.unity
+    guid: e0f49aa4174f98941b88699b5fecddc0
+  - enabled: 1
+    path: Assets/Oculus/SampleFramework/Usage/DistanceGrab.unity
+    guid: 24f58b3f0ca02d44eaec7f50bca538f2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 391d521355c63403f9751c88eb99503f,
       type: 2}
