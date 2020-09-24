@@ -4,33 +4,41 @@ using UnityEngine;
 
 public class VectorController : MonoBehaviour
 {
-    private MeshRenderer meshRenderer;
-    private Color defaultColor;
-    private Color defaultColor_Transparent;
 
     public bool ray = false;
     private bool trigStay = false;
 
+    public Renderer renderer;
+    //public Material material;
+    private MaterialPropertyBlock materialPropertyBlock;
+
+    private Vector3 localPos;
+    public Vector4 quatLocalPos;
+    private int quatLocalPosID;
+
     // Start is called before the first frame update
     void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
-        defaultColor = new Color(1, 1, 0);
-        
+        quatLocalPosID = Shader.PropertyToID("_QuatLocalPos");
+        materialPropertyBlock = new MaterialPropertyBlock();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!trigStay && ray)
-        {
-            meshRenderer.material.SetColor("_BaseColor", defaultColor);
+        localPos = transform.localPosition;
 
-        }
-        else
-        {
-            meshRenderer.material.SetColor("_BaseColor", Color.red);
-        }
+        quatLocalPos = new Vector4(localPos.x, localPos.y, localPos.z, 1.0f);
+        materialPropertyBlock.SetVector(quatLocalPosID, quatLocalPos);
+        renderer.SetPropertyBlock(materialPropertyBlock);
+
+        //if(!trigStay && ray)
+        //{
+
+        //}
+        //else
+        //{
+        //}
     }
     private void OnTriggerStay(Collider other)
     {
