@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: QuaternionTarget
-  m_Shader: {fileID: 4800000, guid: b289ff1a2bad54a669dadc0ee540dbe0, type: 3}
+  m_Shader: {fileID: 4800000, guid: 317b22a74933044259a4f92219b21708, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
