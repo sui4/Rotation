@@ -1,4 +1,4 @@
-﻿Shader "Custom/QuatenionTarget"
+﻿Shader "Custom/sin-worldPos"
 {
     Properties
     {
@@ -9,7 +9,7 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Transparent" "Queue"="Transparent"}
+        Tags { "RenderType"="Opaque" }
         LOD 200
 
         CGPROGRAM
@@ -38,15 +38,16 @@
             // put more per-instance properties here
         UNITY_INSTANCING_BUFFER_END(Props)
 
-        float4 _QuatLocalPos;
-
+        #define PI = 3.14159265359
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
             // Albedo comes from a texture tinted by color
+            
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-            // c.rgb = (IN.worldPos+ float3(1,1,1))/2;
-            c.rgb = (_QuatLocalPos.xyz + float3(1,1,1)) /2;
-            o.Albedo = c.rgb;
+            float tmp = sin(IN.worldPos.x) + asin(IN.worldPos.z);
+            float tmp2 = tan(tmp);
+            fixed4 a = fixed4( abs(sin(IN.worldPos.x)), abs(cos(IN.worldPos.x)), abs(sin(IN.worldPos.z)), 1 );
+            o.Albedo = a.rgb;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
