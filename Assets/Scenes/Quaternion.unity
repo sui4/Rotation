@@ -815,6 +815,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 90509435904473005}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1118133425 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 90509436934515484, guid: 22c803a43f2e74205bc7899b75eabcb7,
+    type: 3}
+  m_PrefabInstance: {fileID: 90509435904473005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1118133427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 90509436934515486, guid: 22c803a43f2e74205bc7899b75eabcb7,
@@ -1658,6 +1664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quaternion
       objectReference: {fileID: 0}
+    - target: {fileID: 90509436934515480, guid: 22c803a43f2e74205bc7899b75eabcb7,
+        type: 3}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 1118133425}
     - target: {fileID: 5810095146993083992, guid: 22c803a43f2e74205bc7899b75eabcb7,
         type: 3}
       propertyPath: m_RootOrder
