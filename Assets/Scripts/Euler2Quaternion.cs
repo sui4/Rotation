@@ -10,7 +10,7 @@ public class Euler2Quaternion : MonoBehaviour
     private Slider[] sliders = new Slider[3];
 
     private Vector3 rotEuler;
-    private Quaternion rot;
+    public Quaternion rot;
     private Vector3 vec;
     // Start is called before the first frame update
     void Start()
@@ -29,8 +29,11 @@ public class Euler2Quaternion : MonoBehaviour
         vec = new Vector3(rot.x, rot.y, rot.z);
         vec.Normalize();
         this.transform.localPosition = vec;
+        this.transform.localRotation = rot;
 
-        target.transform.rotation = rot;
+        this.transform.localRotation = Quaternion.FromToRotation(Vector3.up, vec);
+
+        //target.transform.rotation = rot;
         target.transform.localRotation = rot;
 
     }
