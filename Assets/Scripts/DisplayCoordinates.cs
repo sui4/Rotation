@@ -20,10 +20,11 @@ public class DisplayCoordinates : MonoBehaviour
         targetPos = target.transform.position;
         rotateAngle = target.GetComponent<Rotate>().rotateAngle;
 
-        text.text = "(" + targetPos.x.ToString() +
-                    ", " + targetPos.y.ToString() +
-                    ", " + targetPos.z.ToString() +
-                    ", " + rotateAngle + ")";
+        //text.text = "(" + targetPos.x.ToString() +
+        //            ", " + targetPos.y.ToString() +
+        //            ", " + targetPos.z.ToString() +
+        //            ", " + rotateAngle + ")";
+        text.text = "θ : " + rotateAngle;
 
     }
 }
