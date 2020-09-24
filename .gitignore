@@ -69,3 +69,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Assets for Editor
+/[Aa]ssets/QHierarchy/
+/[Aa]ssets/QHierarchy.meta
+/[Aa]ssets/Sisus/
+/[Aa]ssets/Sisus.meta
+
