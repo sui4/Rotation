@@ -31,8 +31,8 @@ public class MoveItem : MonoBehaviour
             if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || OVRInput.Get(OVRInput.RawButton.RIndexTrigger))
             {
                 item.transform.position = hit.point; // Cubeをレイの当たったところに移動
-                item.transform.rotation = Quaternion.FromToRotation(item.transform.up, hit.normal); // Cubeの上方向をレイが当たったところの表面の方向にする
-                item.transform.position += item.transform.localScale.y / 1.98f * hit.normal; // Cubeが埋まらないように、表面方向に少し動かす
+                //item.transform.rotation = Quaternion.FromToRotation(item.transform.up, hit.normal); // Cubeの上方向をレイが当たったところの表面の方向にする
+                //item.transform.position += item.transform.localScale.y / 1.98f * hit.normal; // Cubeが埋まらないように、表面方向に少し動かす
             }
         }
         else
