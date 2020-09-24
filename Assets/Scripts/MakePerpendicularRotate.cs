@@ -17,7 +17,7 @@ public class MakePerpendicularRotate : MonoBehaviour
         this.transform.position = vecInitial.position;
         //Vector3 dirction = vecTerminal.transform.position - vecInitial.transform.position;
         Vector3 direction = vecTerminal.transform.position;
-        Debug.Log(direction);
+        //Debug.Log(direction);
         this.transform.up = direction;
 
         rotateAngle = vecTerminal.GetComponent<Rotate>().rotateAngle;
