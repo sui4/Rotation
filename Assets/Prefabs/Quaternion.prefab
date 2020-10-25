@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 90509436934515458}
+  isSynced: 0
 --- !u!1 &90509435038816224
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +169,7 @@ LineRenderer:
   - {x: 1, y: 1, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd5860a89f6324bb0b562479b94b1ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  origin: {fileID: 0}
+  origin: {fileID: 2707313177118717711}
   target: {fileID: 90509436934515458}
 --- !u!1 &90509435865683347
 GameObject:
@@ -1049,8 +1050,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 7492975830814651011}
   m_HandleRect: {fileID: 7492975831403319417}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 360
+  m_MinValue: -180
+  m_MaxValue: 180
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:

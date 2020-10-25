@@ -10,6 +10,8 @@ public class DisplayCoordinates : MonoBehaviour
     private Vector3 targetPos;
     private float rotateAngle;
     private Text text;
+
+    public bool isSynced = false;
     void Start()
     {
         text = this.GetComponent<Text>();
@@ -18,7 +20,15 @@ public class DisplayCoordinates : MonoBehaviour
     void Update()
     {
         targetPos = target.transform.position;
-        rotateAngle = target.GetComponent<Rotate>().rotateAngle;
+        if (isSynced)
+        {
+            rotateAngle = target.GetComponent<Euler2Quaternion>().rot.w * 180f;
+        }
+        else
+        {
+            rotateAngle = target.GetComponent<Rotate>().rotateAngle;
+
+        }
 
         //text.text = "(" + targetPos.x.ToString() +
         //            ", " + targetPos.y.ToString() +

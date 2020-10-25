@@ -22,8 +22,9 @@ public class Rotate : MonoBehaviour
     {
         rotateAngle = slider.value;
 
-        rotAxis = this.transform.position - rotateTarget.transform.position;
-        rotateTarget.transform.rotation = Quaternion.AngleAxis(rotateAngle, rotAxis);
+        //rotAxis = this.transform.position - rotateTarget.transform.position;
+        rotAxis = this.transform.localPosition;
+        rotateTarget.transform.localRotation = Quaternion.AngleAxis(rotateAngle, rotAxis);
         //rotateTarget.transform.rotation = Quaternion.AngleAxis(rotateAngle, this.transform.position);
 
         this.transform.rotation = Quaternion.FromToRotation(Vector3.up, rotAxis);
